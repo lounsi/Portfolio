@@ -15,7 +15,7 @@ Assurez-vous d'avoir un navigateur web (Google Chrome, Mozilla Firefox, etc.).
 		Télécharger le projet
 
 
-1.Rendez-vous sur mon dépôt GitHub : Lien du dépôt
+1.Rendez-vous sur mon dépôt GitHub : https://github.com/lounsi/Portfolio
 
 2.Cliquez sur le bouton vert Code.
 
