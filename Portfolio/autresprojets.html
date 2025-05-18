@@ -1,0 +1,1159 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+        
+        /* Global */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #006d64;
+            color: white;
+
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ffffff;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #34b88f;
+        }
+
+        h5 {
+            color : orange;
+            font-style: italic;
+        }
+
+        .p {
+            margin: 20px 0;
+        }
+
+        strong {
+            color: #34b88f;
+        }
+
+        .intro {
+            text-align: center;
+            margin: 30px auto;
+            max-width: 800px;
+        }
+
+        /* Main Image */
+        .main-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px auto;
+            width: 100%;
+            max-width: 675px;
+            height: auto;
+        }
+
+        .main-image img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Section Projets */
+        .project-section {
+            margin: 40px auto;
+            max-width: 1200px;
+            padding: 20px;
+            background: white;
+            color: #333;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-section h2 {
+            color: #006d64;
+        }
+
+        .project-description {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .project-description strong {
+            font-weight: bold;
+        }
+
+        .project-image {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .project-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .icon {
+            display: block;
+            margin: 20px auto 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+        .flechebas{
+            max-width: 50px;
+            max-height: 50px;
+        }
+
+        /* Conteneur centré du bouton */
+        .download-button-container {
+            text-align: center; /* Centre le contenu à l'intérieur */
+            margin: 20px auto; /* Ajoute un espace autour du bouton */
+        }
+
+        /* Style du bouton */
+        .download-button {
+            display: inline-block; /* Limite la largeur du bouton au contenu */
+            padding: 10px 20px;
+            background-color: #34b88f;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            text-align: center;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            width: auto; /* S'adapte à la taille du texte */
+        }
+
+        /* Effet au survol */
+        .download-button:hover {
+            background-color: #2a8b6f;
+        }
+
+        footer {
+            margin-top: 60px; /* Espace au-dessus du footer */
+            text-align: center;
+            color: #ffffff;
+        }
+
+
+
+
+
+
+ /* Section générale */
+ main {
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #ffffff; /* Vert principal */
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 53px;
+            text-align: center;
+            color: #ffffff; /* Vert principal */
+            margin-bottom: 20px;
+        }
+
+        .image-ronde {
+            display: block;
+            margin: 30px auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: url(images/autresprojets.png) center / cover no-repeat;
+        }
+
+
+
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #006d64;
+            color: #006d64;
+        }
+
+        /* Ajout d'espace supplémentaire sous le footer */
+        footer {
+            margin-top: 60px; /* Espace au-dessus du footer */
+            text-align: center;
+            color: #ffffff;
+        }
+
+
+        .project-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-wrapper .project-section {
+    flex: 1 1 48%;
+    box-sizing: border-box;
+}
+
+
+.realisations {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 60px;
+  flex-wrap: nowrap;
+}
+
+.realisation-paire {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1; /* largeur égale pour chaque paire */
+  min-width: 0;
+}
+
+.realisation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: visible; /* changer overflow hidden en visible */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex: 1 1 auto;
+  min-height: auto; /* s'assurer que la hauteur n'est pas limitée */
+}
+
+
+.realisation img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.texte {
+    background: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 15rem;
+}
+
+
+.buttons, .buttonsTinkercadbloc {
+  padding: 10px; /* ajoute un padding tout autour */
+  margin-top: 10px;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.buttons a, .buttonsTinkercadbloc a {
+  padding: 8px 15px;
+  background-color: #2c6e49;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  text-align: center;
+  flex: 1 1 auto;
+  transition: background-color 0.3s ease;
+  margin: 1%;
+}
+
+.buttons a:hover, .buttonsTinkercadbloc a:hover {
+  background-color: #1d4732;
+}
+
+/* Grille pour les langages */
+.images-grid, .autres-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.images-grid img, .autres-grid img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+/* Espacement entre sections */
+section {
+  margin-bottom: 100px;
+}
+
+/* Responsive mobile */
+@media (max-width: 600px) {
+  .realisations {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .realisation-paire {
+    width: 100%;
+  }
+  .buttons, .buttonsTinkercadbloc {
+    flex-direction: column;
+  }
+  .buttons a, .buttonsTinkercadbloc a {
+    margin-bottom: 0.8rem;
+  }
+
+    .project-wrapper {
+        flex-direction: column;
+    }
+
+    .project-wrapper .project-section {
+        width: 100%;
+    }
+}
+
+.project-section {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    line-height: 1.7; /* <- Meilleure lisibilité */
+}
+
+.project-section:hover {
+    transform: translateY(-5px);
+}
+
+.project-description {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.project-description .p {
+    margin-bottom: 16px; /* <- Espace entre paragraphes */
+    font-size: 16px;
+    color: #333;
+}
+
+.project-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #00796b;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+ul :not(.nav-links):not(header):not(.navbar):not(.logo):not(.nav-links li):not(.nav-links a):not(.nav-links a:hover){
+
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+ul li :not(.nav-links):not(header):not(.navbar):not(.logo):not(.nav-links li):not(.nav-links a):not(.nav-links a:hover){
+    margin-bottom: 10px;
+    font-size: 15.5px;
+    line-height: 1.6;
+}
+
+.project-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.icon {
+    width: 60px;
+    height: auto;
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project-wrapper {
+        flex-direction: column;
+    }
+
+    .project-section {
+        flex: 1 1 100%;
+    }
+}
+
+@media (min-width: 768px) {
+  .buttonsTinkercadbloc a {
+    flex: 0 1 auto;     /* stop l’étirement automatique */
+    max-width: 200px;   /* limite la largeur max */
+    width: auto;        /* laisse la largeur naturelle */
+    white-space: nowrap; /* empêche le retour à la ligne dans le bouton */
+    margin: 2rem;
+  }
+}
+
+
+
+
+.read-more-btn {
+  background-color: transparent;
+  border: none;
+  color: #00796b;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 10px;
+  transition: color 0.3s;
+}
+
+.read-more-btn:hover {
+  color: #004d40;
+}
+
+
+
+
+        /* Conteneur centré du bouton */
+        .download-button-container {
+            text-align: center; /* Centre le contenu à l'intérieur */
+            margin: 20px auto; /* Ajoute un espace autour du bouton */
+        }
+
+        /* Style du bouton */
+        .download-button {
+            display: inline-block; /* Limite la largeur du bouton au contenu */
+            padding: 10px 20px;
+            background-color: #34b88f;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            text-align: center;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            width: auto; /* S'adapte à la taille du texte */
+        }
+
+        /* Effet au survol */
+        .download-button:hover {
+            background-color: #2a8b6f;
+        }
+
+
+        
+            
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>  
+            
+    
+
+
+    <header>
+      <nav class="navbar">
+        <div class="logo">Mon Portfolio</div>
+        <div class="burger" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="a-propos.html">À Propos</a></li>
+          <li><a href="bts-sio.html">BTS SIO</a></li>
+          <li><a href="ecole-entreprise.html">École & Entreprise</a></li>
+          <li><a href="autresprojets.html">Réalisations & Missions</a></li>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="veille.html">Veille Technologique</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      
+    </header>
+
+    <!-- Main Content -->
+    <main>    
+            
+                   <!-- Section compétences -->
+        <section id="autresprojets">
+            <div class="image-ronde"></div><br>
+            <h1>RÉALISATIONS & MISSIONS</h1>
+        </section> 
+            
+
+
+
+
+
+
+
+
+
+        <br><br><h2>Compétences :</h2><br>
+        <!-- Langages -->
+<section>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <img src="images/PHP-logo.svg.png" alt="PHP">
+        <img src="images/ISO_C++_Logo.svg.png" alt="C++">
+        <img src="images/CSS3_logo_and_wordmark.svg.png" alt="CSS">
+        <img src="images/file_type_html_icon_130541.png" alt="HTML">
+        <img src="images/JavaScript-Logo.png" alt="JavaScript">
+        <img src="images/Sql_data_base_with_logo.png" alt="SQL">
+        <img src="images/Python-logo-notext.svg.png" alt="Python">
+        <img src="images/java.png" alt="Java">
+        <!-- Duplicate for seamless loop -->
+        <img src="images/PHP-logo.svg.png" alt="PHP">
+        <img src="images/ISO_C++_Logo.svg.png" alt="C++">
+        <img src="images/CSS3_logo_and_wordmark.svg.png" alt="CSS">
+        <img src="images/file_type_html_icon_130541.png" alt="HTML">
+      </div>
+    </div>
+  </section>
+  
+  <!-- Autres compétences -->
+  <section>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <img src="images/Windows_logo_-_2012.svg.png" alt="Windows">
+        <img src="images/1200px-Raspberry_Pi_logo.svg.png" alt="Raspberry Pi">
+        <img src="images/mit app inventor.png" alt="MIT App Inventor">
+        <img src="images/ArduinoLogo_®.svg.png" alt="Arduino">
+        <img src="images/1200px-MySQL.svg.png" alt="MySQL">
+        <img src="images/linux-logo-0.png" alt="Linux">
+        <img src="images/excel2.png" alt="Excel">
+        <img src="images/symfony.png" alt="Symfony">
+        <img src="images/JMeriseLogoPetit.png" alt="JMerise">
+        <img src="images/WampServer-logo.svg.png" alt="WampServer">
+        <img src="images/visual-paradigm-logo.png" alt="Visual Paradigm">
+        <img src="images/Apache_NetBeans_Logo.svg.png" alt="NetBeans">
+        <img src="images/pia.png" alt="PIA">
+        <img src="images/star uml.png" alt="StarUML">
+        <img src="images/Visual_Studio_Code_1.35_icon.svg.png" alt="VS Code">
+        <!-- Duplicate for seamless loop -->
+        <img src="images/Windows_logo_-_2012.svg.png" alt="Windows">
+        <img src="images/1200px-Raspberry_Pi_logo.svg.png" alt="Raspberry Pi">
+        <img src="images/mit app inventor.png" alt="MIT App Inventor">
+      </div>
+    </div>
+  </section>
+  
+
+  <br><br><br><h2>Réalisations au sein de mon école :</h2><br><br>
+
+  <div class="project-wrapper">
+    <div class="project-section" style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
+      
+      <!-- Texte -->
+      <div class="project-description" style="flex: 1 1 300px;">
+        <h2>GLPI</h2>
+        <div class="text-collapse">
+          <div class="text-preview">
+            <p class="p">
+  GLPI est un outil open-source conçu pour gérer les infrastructures informatiques et le <strong>parc matériel</strong> d'une organisation.
+            </p>
+            <button class="read-more-btn">Lire la suite →</button>
+          </div>
+  
+          <div class="text-full" style="display: none;">
+            <p class="p">
+                <h5>Je vous invite à consulter mes projets réaliser au sein de mon entreprise, vous y retrouverez un projet GLPI plus complet !</h5>
+                <br><br>
+  GLPI est un outil open-source conçu pour gérer les infrastructures informatiques et le <strong>parc matériel</strong> d'une organisation.
+              Il permet aux administrateurs système de <strong>suivre les équipements</strong>, de gérer les licences et les contrats, et de proposer un système de ticketing performant pour le support technique.
+            </p>
+
+            <p class="p">
+              Mon installation sur un environnement Windows :
+            </p>
+            <ul>
+              <li>Téléchargement de la dernière version de GLPI sur le site officiel.</li>
+              <li>Installation d'un environnement WAMP pour la gestion de la base de données.</li>
+              <li>Configuration de la base de données MySQL et connexion de GLPI à celle-ci via l'interface d'installation.</li>
+              <li>Configuration de l'espace GLPI en fonction des besoins.</li>
+            </ul>
+
+            <br>
+
+            <div id="elementsapropos">
+                <div class="element">
+                    <a href="images/captures/glpiscreen.png" target="_blank">
+                  <img src="images/captures/glpiscreen.png" href="images/captures/glpiscreen.png" alt="GLPI" class="imgdocglpi" ></a><br>
+                
+            </div>
+            </div>
+            <button class="read-more-btn">Réduire ↑</button>
+          </div>
+        </div>
+  
+      <!-- Image -->
+    <div class="project-image">
+      <img src="images/GLPI.png" alt="GLPI Icon" class="icon">
+    </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+<br>
+
+
+    <div class="project-section" style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
+      
+        <!-- Texte -->
+        <div class="project-description" style="flex: 1 1 300px;">
+          <h2>SITE RESPONSIVE</h2>
+          <div class="text-collapse">
+            <div class="text-preview">
+              <p class="p">
+                Un site pensé pour <strong>tous</strong> les écrans, c'est plus qu'un simple confort : c'est une <strong>nécessité</strong>
+              </p>
+              <button class="read-more-btn">Lire la suite →</button>
+            </div>
+    
+            <div class="text-full" style="display: none;">
+                <p class="p">
+                    Un site pensé pour <strong>tous</strong> les écrans, c'est plus qu'un simple confort : c'est une <strong>nécessité</strong>
+                  </p>
+              <p class="p">
+                    Aujourd’hui, les utilisateurs naviguent autant sur <strong>téléphone</strong>, <strong>tablette</strong> que sur <strong>ordinateur</strong>.
+                    Un site responsive est conçu pour s’ajuster  <strong>automatiquement</strong> à tous ces formats.
+                  </p>
+  
+              <p class="p">
+                
+                    Derrière cette souplesse, il y a un vrai travail technique : on utilise des <strong>grilles flexibles</strong>, 
+                    des <strong>points de rupture</strong> (breakpoints) selon les tailles d’écran, et du <strong>CSS adaptatif</strong> 
+                    pour faire évoluer la mise en page en temps réel.
+                  </p>
+                  <p class="p">
+                    Ce projet m’a permis de concevoir une interface <strong>claire</strong>, <strong>cohérente</strong> et 
+                    <strong>facile à utiliser</strong>, aussi bien sur un petit écran que sur un grand. 
+                    <strong>L’objectif</strong> : allier esthétique, confort de lecture et performance, 
+                    sans compromis.
+                  </p>
+<br>
+                  <p class="p">
+Essayez avec le site si dessous, en faisant : <strong>Ctrl +</strong> et <strong>Ctrl -</strong> .
+                  </p>
+  
+                    <div id="elementsapropos">
+                <div class="download-button-container">
+                    <a href="ECOMMERCE/index.html" class="download-button" target="_blank">Site responsive</a>
+                </div>
+              </div>
+              <button class="read-more-btn">Réduire ↑</button>
+            </div>
+          </div>
+    
+        <!-- Image -->
+      <div class="project-image">
+        <img src="images/Responsive_Web_Design_Logo.svg.png" alt="GLPI Icon" class="icon">
+      </div>
+        </div>
+      </div>
+<br>
+
+      <div class="project-section" style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
+      
+        <!-- Texte -->
+        <div class="project-description" style="flex: 1 1 300px;">
+          <h2>RECONSTITUTION D'UN SITE</h2>
+          <div class="text-collapse">
+            <div class="text-preview">
+              <p class="p">
+                Reproduire un site complet à partir de <strong>captures d’écran</strong>, sans autre indication, voilà le défi qui nous a été proposé en début de BTS.
+            </p>
+              <button class="read-more-btn">Lire la suite →</button>
+            </div>
+    
+            <div class="text-full" style="display: none;">
+                <p class="p">
+                    Reproduire un site complet (sur des licornes...) à partir de <strong>captures d’écran</strong> qui nous avaient été fournies, sans autre indication: voilà le défi qui nous a été proposé en début de BTS.
+                  </p>
+                  
+                  <p class="p">
+                    L’objectif ? Nous plonger directement dans la pratique, en apprenant à <strong>analyser une interface</strong>, à la <strong>reproduire fidèlement</strong> en HTML et CSS, et à structurer le code proprement.
+                  </p>
+                  
+                  <p class="p">
+                    Ce projet nous a permis de découvrir les <strong>fondations du web</strong> : structuration du contenu avec le <strong>HTML</strong>, mise en forme avec le <strong>CSS</strong>, positionnement, typographie, couleurs, et hiérarchie visuelle.
+                  </p>
+                  
+                  <p class="p">
+                    Coder à partir d’images, c’est aussi apprendre à <strong>observer dans le détail</strong> : marges, tailles de police, alignements… Chaque élément compte. Ce travail nous a initiés aux <strong>bonnes pratiques</strong> du développement web, comme l'utilisation de <strong>classes CSS claires</strong> et de <strong>structures logiques</strong>.
+                  </p>
+                  
+                  <p class="p">
+                    En résumé, un excellent exercice pour apprendre à <strong>traduire un design en code</strong>, à développer notre rigueur, et à mieux comprendre comment se construit une page web de zéro.
+                  </p>  
+              <br>
+              <div id="elementsapropos">
+                <div class="download-button-container">
+                    <a href="Licornes-ressources/unicorn_MAHE_LEO.html" class="download-button" target="_blank">Visulaiser le site</a>
+                </div>
+              </div>
+              <button class="read-more-btn">Réduire ↑</button>
+            </div>
+          </div>
+    
+        <!-- Image -->
+      <div class="project-image">
+        <img src="images/sitescreen.png" alt="GLPI Icon" class="icon">
+      </div>
+        </div>
+      </div>
+
+<br>
+      <div class="project-section" style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
+      
+        <!-- Texte -->
+        <div class="project-description" style="flex: 1 1 300px;">
+          <h2>SÉCURISATION D'UN SITE AVEC OWASP</h2>
+          <div class="text-collapse">
+            <div class="text-preview">
+              <p class="p">
+                Apprendre à <strong>protéger une application web</strong> dès ses premières lignes de code, c’était l’objectif de ce projet de sécurisation en PHP, réalisé selon les principes de l’<strong>OWASP</strong>.
+              </p>
+              <button class="read-more-btn">Lire la suite →</button>
+            </div>
+    
+            <div class="text-full" style="display: none;">
+              <p class="p">
+                Apprendre à <strong>protéger une application web</strong> dès ses premières lignes de code, c’était l’objectif de ce projet de sécurisation en PHP, réalisé selon les principes de l’<strong>OWASP</strong>.
+              </p>
+              <br>
+              <div id="elementsapropos">
+                <div class="element">
+                    <a href="images/captures/requetepreparee.png" target="_blank">
+                  <img src="images/captures/requetepreparee.png" href="images/captures/glpiscreen.png" alt="GLPI" class="imgdocglpi" ></a><br>
+                
+            </div>
+            </div><br><br>
+
+              <p class="p">
+               <strong> Pour les moins expérimentés</strong> : il s’agit ici d’une <strong>requête préparée</strong>, une technique qui permet de se prémunir contre les <strong>injections SQL</strong>. Tout simplement l’une des failles les plus connues et exploitées sur le web.
+              </p>
+              
+                <p class="p">
+                  L’idée est simple : au lieu qu’un utilisateur mal intentionné puisse renseigner un bout de code dans un formulaire, ce qui viendrait <strong>tromper le système</strong> et pourrait entraîner de <strong>lourdes conséquences</strong>, ici on fait en sorte que le système ne puisse <strong>jamais</strong> interpréter ce que l’utilisateur saisit comme du code.
+                </p>                              
+              
+              <p class="p">
+              <strong>Les plus expérimentés</strong> auront remarqué l’usage de <strong>SHA-256</strong> pour le hachage du mot de passe. Cette méthode, bien que couramment rencontrée dans des tutoriels anciens, est aujourd’hui à éviter dans un environnement réel.
+              </p>
+              
+              <p class="p">
+                Ce choix a été fait ici dans un <strong>cadre pédagogique</strong> : l'objectif était avant tout de comprendre le fonctionnement d'une requête sécurisée, et non d'implémenter un système d'authentification complet.
+              </p>
+              
+              <p class="p">
+                En approfondissant mes connaissances, j’ai découvert qu’il est préférable d’utiliser les fonctions natives de PHP comme <strong>password_hash()</strong> et <strong>password_verify()</strong>, qui sont plus sûres car elles incluent automatiquement un <strong>sel cryptographique</strong> et utilisent des algorithmes conçus pour le hachage de mots de passe.
+              </p>
+              
+              <p class="p">
+                Cette première approche de la sécurité web m’a permis de comprendre l’importance d’<strong>isoler les données utilisateurs</strong> et d’appliquer des <strong>bonnes pratiques dès le départ</strong> pour construire des applications robustes.
+              </p> 
+              <button class="read-more-btn">Réduire ↑</button>
+            </div>
+          </div>
+    
+        <!-- Image -->
+      <div class="project-image">
+        <img src="images/logosecurise.png" alt="GLPI Icon" class="icon">
+      </div>
+        </div>
+      </div>
+<br>
+<div class="project-section" style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
+      
+  <!-- Texte -->
+  <div class="project-description" style="flex: 1 1 300px;">
+    <h2>TESTS UNITAIRES EN JAVA</h2>
+    <div class="text-collapse">
+      <div class="text-preview">
+        <p class="p">
+          Dans ce projet, l’objectif était de mettre en place des <strong>tests unitaires</strong> 
+          avec <strong>JUnit</strong>, afin de valider le bon fonctionnement d’une <strong>calculatrice</strong> codée en Java.
+        </p>
+        <button class="read-more-btn">Lire la suite →</button>
+      </div>
+
+      <div class="text-full" style="display: none;">
+        <p class="p">
+          Dans ce projet, l’objectif était de mettre en place des <strong>tests unitaires</strong> 
+          avec <strong>JUnit</strong>, afin de valider le bon fonctionnement d’une <strong>calculatrice</strong> codée en Java.
+        </p>
+        <p class="p">
+          Chaque opération (addition, soustraction, multiplication, division) a été <strong>testée</strong> avec 
+          différents cas : valeurs positives, négatives, et même la division par zéro, pour 
+          s’assurer de la <strong> fiabilité</strong> de l’algorithme dans toutes les situations.
+        </p>
+        <br><br>
+        <div id="elementsapropos">
+          <div class="element">
+              <a href="images/captures/TESTUNITAIRE.png" target="_blank">
+            <img src="images/captures/TESTUNITAIRE.png" href="images/captures/glpiscreen.png" alt="TEST UNITAIRES" class="imgdocglpi" ></a><br>
+          
+      </div>
+      </div><br>
+      <p class="p">
+        Ce que montre l’extrait ci-dessus : la structure typique d’un test unitaire. 
+        On commence par <strong>préparer</strong> l’environnement, on appelle la méthode à tester, 
+        puis on <strong>vérifie le résultat attendu</strong> grâce à la fonction <code>assertEquals()</code>.
+      </p>
+
+      <p class="p">
+        Ces tests permettent de <strong>détecter automatiquement</strong> toute anomalie, par exemple si une méthode 
+        retourne un résultat incorrect après une modification. C’est une <strong>bonne pratique essentielle</strong> 
+        dans les projets de développement professionnels.
+      </p>
+        <button class="read-more-btn">Réduire ↑</button>
+      </div>
+    </div>
+
+  <!-- Image -->
+<div class="project-image">
+  <img src="images/testlogo.png" alt="GLPI Icon" class="icon">
+</div>
+  </div>
+</div>
+
+<br>
+
+
+<div class="project-section" style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
+
+
+<!-- Texte -->
+<div class="project-description" style="flex: 1 1 300px;">
+  <h2>SERVEUR DNS</h2>
+  <div class="text-collapse">
+    <div class="text-preview">
+      <p class="p">
+        Ce projet avait pour objectif de déployer un <strong>environnement serveur</strong> complet via <strong>Windows Server 2016</strong> dans une <strong>machine virtuelle</strong>, en installant les rôles <br><strong>AD DS</strong> (Active Directory Domain Services) et <strong>DNS</strong>.
+      </p>
+      <button class="read-more-btn">Lire la suite →</button>
+    </div>
+
+    <div class="text-full" style="display: none;">
+      <p class="p">
+        Ce projet avait pour objectif de déployer un <strong>environnement serveur</strong> complet via <strong>Windows Server 2016</strong> dans une <strong>machine virtuelle</strong>, en installant les rôles <br><strong>AD DS</strong> (Active Directory Domain Services) et <strong>DNS</strong>.
+      </p>
+      <p class="p">
+        Windows Server 2016 a été choisi pour sa <strong>stabilité</strong> et sa compatibilité avec les fonctionnalités avancées comme <strong>Active Directory</strong>. Une fois le rôle AD installé, le <strong>serveur DNS</strong> est automatiquement configuré, car il est nécessaire pour la gestion des noms dans un domaine.
+      </p>
+
+      <br><br>
+      <div id="elementsapropos">
+        <div class="element">
+            <a href="images/captures/dns1.png" target="_blank">
+          <img src="images/captures/dns1.png"  alt="TEST UNITAIRES" class="imgdocglpi" ></a><br>
+    </div>
+    </div>
+    <br>
+
+    <p class="p">
+      Le tableau de bord confirme que les rôles ont été <strong>correctement installés</strong> et sont opérationnels.
+    </p><br><br>
+      <br><br>
+      <div id="elementsapropos">
+        <div class="element">
+            <a href="images/captures/dns2.png" target="_blank">
+          <img src="images/captures/dns2.png"  alt="TEST UNITAIRES" class="imgdocglpi" ></a><br>
+    </div>
+    </div>
+    <br>
+    <p class="p">
+      Un test DNS a été réalisé à l’aide de la commande <code>nslookup</code>, qui permet de vérifier la <strong>résolution des noms de domaine</strong>. 
+      Le serveur répond bien, preuve que le DNS est fonctionnel.
+    </p>
+
+    <br><br>
+    <div id="elementsapropos">
+      <div class="element">
+          <a href="images/captures/dns3.png" target="_blank">
+        <img src="images/captures/dns3.png"  alt="TEST UNITAIRES" class="imgdocglpi" ></a><br>
+  </div>
+  </div>
+  <br>
+  <p class="p">
+    Enfin, la commande <code>netdom query fsmo</code> montre que le serveur occupe tous les rôles FSMO, ce qui confirme qu’il est bien <strong>contrôleur de domaine principal</strong>.
+  </p><br><br>
+  <p class="p">
+    Ce projet m’a permis de mieux comprendre les <strong>bases du réseau d’entreprise</strong>, la gestion des domaines via Active Directory, et le fonctionnement interne du DNS dans un environnement Windows Server.
+  </p>
+  <p class="p">
+    Même s’il ne s’agit pas d’une configuration d’entreprise complète, cette première mise en place m’a permis de me familiariser avec les outils <strong>indispensables en administration système</strong>.
+  </p>
+  
+      <button class="read-more-btn">Réduire ↑</button>
+    </div>
+  </div>
+
+<!-- Image -->
+<div class="project-image">
+<img src="images/logodns.png" alt="GLPI Icon" class="icon">
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<br><br>
+<br><br>
+<br><br>
+<br>
+
+
+        <br><br><h2>Réalisations au sein de mon entreprise :</h2><br><br><!-- Projet GLPI -->
+
+
+<div class="project-wrapper">
+  <div class="project-section" style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
+    
+    <!-- Texte -->
+    <div class="project-description" style="flex: 1 1 300px;">
+      <h2>GLPI</h2>
+      <div class="text-collapse">
+        <div class="text-preview">
+          <p class="p">
+GLPI est un outil open-source conçu pour gérer les infrastructures informatiques et le <strong>parc matériel</strong> d'une organisation.
+          </p>
+          <button class="read-more-btn">Lire la suite →</button>
+        </div>
+
+        <div class="text-full" style="display: none;">
+          <p class="p">
+GLPI est un outil open-source conçu pour gérer les infrastructures informatiques et le <strong>parc matériel</strong> d'une organisation.
+            Il permet aux administrateurs système de <strong>suivre les équipements</strong>, de gérer les licences et les contrats, et de proposer un système de ticketing performant pour le support technique.
+          </p>
+          <p class="p">
+            Cet outil propose également des fonctionnalités avancées telles que l'intégration avec Active Directory, des rapports détaillés sur les performances et l'utilisation, ainsi qu'une personnalisation complète pour répondre aux besoins spécifiques de chaque organisation.
+          </p>
+          <p class="p">
+            Pour l'installer sur un environnement Windows :
+            
+          </p>
+          <ul>
+            <li>Télécharger la dernière version de GLPI sur le site officiel.</li>
+            <li>Installer un environnement WAMP ou XAMPP pour la gestion de la base de données et du serveur web.</li>
+            <li>Configurer la base de données MySQL et relier GLPI à celle-ci via l'interface d'installation.</li>
+            <li>Modification des fichiers Apache afin de rendre GLPI accéssible sur le réseau</li>
+            <li>Configurer les utilisateurs et les permissions selon les besoins.</li>
+          </ul>
+          <p class="p">
+            GLPI s'impose comme une solution complète pour les administrateurs réseau souhaitant optimiser la gestion et le suivi de leurs infrastructures.
+
+            
+          </p>
+          <br>
+        <div class="download-button-container">
+            <a href="images/Procédure GLPI.pdf" class="download-button" target="_blank">Télécharger la procédure</a>
+        </div>
+
+          <button class="read-more-btn">Réduire ↑</button>
+        </div>
+      </div>
+
+    <!-- Image -->
+  <div class="project-image">
+    <img src="images/GLPI.png" alt="GLPI Icon" class="icon">
+  </div>
+    </div>
+
+
+  </div>
+</div>
+
+           <div class="project-section" style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
+
+  <!-- Texte -->
+  <div class="project-description" style="flex: 1 1 300px;">
+    <h2>GPO</h2>
+    <div class="text-collapse">
+      <div class="text-preview">
+        <p class="p">
+          Une <strong>GPO</strong> (Group Policy Object) est un outil essentiel permettant aux administrateurs système de <strong>déployer et appliquer des stratégies</strong> sur les ordinateurs et les utilisateurs d’un domaine Active Directory.
+        </p>
+        <button class="read-more-btn">Lire la suite →</button>
+      </div>
+
+      <div class="text-full" style="display: none;">
+        <p class="p">
+          Une <strong>GPO</strong> (Group Policy Object) est un outil essentiel permettant aux administrateurs système de <strong>déployer et appliquer des stratégies</strong> sur les ordinateurs et les utilisateurs d’un domaine Active Directory.
+        </p>
+        <p class="p">
+          Elle facilite l'automatisation de configurations et l'application de règles sur l’ensemble du réseau.
+        </p>
+        <p class="p">
+          Les GPO permettent de gérer divers aspects des postes de travail, comme les paramètres réseau, les restrictions d'accès, et l'exécution automatique de scripts. Elles sont couramment utilisées pour améliorer la <strong>sécurité</strong> et <strong>optimiser</strong> la gestion informatique d'une organisation.
+        </p>
+        <p class="p">
+          Dans mon projet, j’ai mis en place une GPO visant à <strong>afficher une image</strong> de présentation sur une page web lors de l’ouverture des sessions utilisateurs. Voici les principales étapes de son déploiement :
+        </p>
+        <ul>
+          <li>Création d'une nouvelle GPO via la console de gestion des stratégies de groupe.</li>
+          <li>Ajout d’un script PowerShell directement dans la GPO pour ouvrir l’image de présentation dans un navigateur.</li>
+          <li>Définition de la GPO pour exécuter le script à l’ouverture de la session utilisateur.</li>
+          <li>Application de la GPO aux utilisateurs concernés et vérification du bon fonctionnement.</li>
+        </ul>
+        <p class="p">
+          Grâce à cette GPO, l’affichage personnalisé au démarrage des sessions est centralisé, garantissant une meilleure cohérence visuelle et informative pour les utilisateurs.
+        </p>
+        <button class="read-more-btn">Réduire ↑</button>
+      </div>
+    </div>
+  <!-- Image --> 
+  <div class="project-image">
+    <img src="images/GPO.png" alt="GPO Icon" class="icon">
+  </div>
+  </div>
+
+
+
+
+
+</div>
+
+
+        
+
+<section>
+  <br><br><br><br><br><br>
+  <h2>Voici quelques réalisations personnelles ou antérieures :</h2><br><br>
+
+  <div class="realisations">
+<br>
+    <!-- Paire 1 -->
+    <div class="realisation-paire">
+      <div class="realisation">
+        <div class="texte">
+          <br><p>Ici vous pourrez retrouvez quelques-unes de mes créations sur Tinkercad !<br>Testez les en cliquant sur les liens</p><br>
+          <a href="#ttt">
+            <img src="images/flechebas.png" alt="flèche" class="flechebas"><br>
+          </a>
+        </div>
+      </div>
+      <div class="realisation" id="ttt">
+        <img src="images/logo-tinkercad.png" alt="Tinkercad">
+        <div class="texte">
+          <p >Liens Tinkercad :<br></p>
+          <div class="buttonsTinkercadbloc">
+            <p><a href="https://www.tinkercad.com/things/l5dKngxAfs5-capteur-de-recul-leo-mahe?sharecode=gbgL7UgZQPxgerGXRnqFw6vP4GpJ-AQIAFlcbHOJ9KQ" target="_blank" class="buttonsTinkercad">Capteur de recul</a></p>
+            <p><a href="https://www.tinkercad.com/things/lpymh5qv8iP-led-rvb-pilotage-par-interrupteur-leo-mahe-?sharecode=Bb5UrVrlUa5ui84PvIDpwOSOHXce5nkjH-u-YabCKHE" target="_blank" class="buttonsTinkercad">LED RVB</a></p>
+            <p><a href="https://www.tinkercad.com/things/dFFgkJZC9rh-capteur-de-lumiere-et-chaleur-leo-mahe?sharecode=wsQWgXDkfbVLIzrME2d_meGB6scOkVBZ-DLBzYvhnmA" target="_blank" class="buttonsTinkercad">Capteur de lumière et de chaleur</a></p>
+            <p><a href="https://www.tinkercad.com/things/aW2L0zQugUl-chronometre-leo-mahe?sharecode=dmtaivcLR32xIIr4gF3TM-3StiYMVPn_SA59XK68JPw" target="_blank" class="buttonsTinkercad">Chronomètre</a></p>
+          </div>
+        </div>
+      </div>
+    </div><br><br><br><br>
+
+    <!-- Paire 2 -->
+    <div class="realisation-paire">
+      <div class="realisation">
+        <div class="texte">
+          <br><p>Ici vous pourrez retrouvez des images de mon projet qui consiste à piloter une grue miniature pour transporter des objets !<br></p><br>
+          <a href="#ggg">
+            <img src="images/flechebas.png" alt="flèche" class="flechebas"><br>
+          </a>
+        </div>
+      </div>
+      <div class="realisation" id="ggg">
+        <img src="images/grue.png" alt="Grue">
+        <div class="texte">
+          <p >1er MINI PROJET:<br></p><br>
+          <p>Grue miniature</p><br>
+          <div class="buttons">
+            <a href="images/GRUE2.jpg" target="_blank">Voir Image <br>1</a>
+            <a href="images/GRUE1.jpg" target="_blank">Voir Image <br>2</a>
+          </div><br><br>
+        </div>
+      </div>
+    </div><br><br><br><br>
+
+    <!-- Paire 3 -->
+    <div class="realisation-paire">
+      <div class="realisation">
+        <div class="texte">
+          <br><p>Ici vous pourrez retrouvez des images de mon projet qui consiste à réaliser à partir de zéro, un distributeur de croquettes automatisé !<br></p><br>
+          <a href="#ddd">
+            <img src="images/flechebas.png" alt="flèche" class="flechebas"><br>
+          </a>
+        </div>
+      </div>
+      <div class="realisation" id="ddd">
+        <img src="images/chien.png" alt="Chien">
+        <div class="texte">
+          <p >2ème MINI PROJET:<br></p><br>
+          <p>Distributeur de croquettes automatisé<br></p>
+          <div class="buttons">
+            <a href="images/distributeur3.JPG" target="_blank">Voir Image 1</a>
+            <a href="images/distributeur2.JPG" target="_blank">Voir Image 2</a>
+            <a href="images/distributeur1.JPG" target="_blank">Voir Image 3</a><br>
+          </div><br><br>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+        
+</main>
+        <!-- Footer -->
+        <footer>
+            <p>© 2025 Mon Portfolio - Tous droits réservés</p>
+            <a href="https://www.linkedin.com/in/leomahe" target="_blank">Mon LinkedIn</a>
+        </footer>
+
+
+<script>
+  document.querySelectorAll('.text-collapse').forEach(container => {
+    const preview = container.querySelector('.text-preview');
+    const full = container.querySelector('.text-full');
+    const buttons = container.querySelectorAll('.read-more-btn');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const isExpanded = full.style.display === 'block';
+        full.style.display = isExpanded ? 'none' : 'block';
+        preview.style.display = isExpanded ? 'block' : 'none';
+      });
+    });
+  });
+
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+  }
+</script>
+
+
+
+    </body>
+    </html>
+
+
+

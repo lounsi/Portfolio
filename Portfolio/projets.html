@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Global */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #006d64;
+            color: white;
+
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ffffff;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #34b88f;
+        }
+
+        .p {
+            margin: 20px 0;
+            line-height: 1.6; /* Espacement entre les lignes pour aérer le texte */
+        }
+
+        .p2 {
+            color: sandybrown;
+            font-style: italic;
+        }
+
+        strong {
+            color: #34b88f;
+        }
+
+        .intro {
+            text-align: center;
+margin: 30px auto  ;          
+
+            max-width: 800px;
+        }
+
+        /* Box for the first paragraph */
+        .box {
+            background-color: white;
+            color: #333;
+            padding: 8px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 15px auto 80px auto;
+            max-width: 800px;
+        }
+
+        .box p.p2 {
+            font-style: italic;
+            color: orange;
+        }
+
+        /* Section for Projects */
+        .project-section {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1800px;
+            margin: 0 auto; /* Centrer la section des projets */
+        }
+
+        .project-section .project {
+            background: white;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            width: 48%; /* Ajuster la largeur des projets */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column; /* Pour que le bouton soit en bas */
+        }
+
+        .project-section .project h2 {
+            color: #006d64;
+        }
+
+        .project-description {
+            margin-bottom: 20px;
+            text-align: justify;
+            flex-grow: 1; /* Permet à la description de grandir et occuper tout l'espace restant */
+        }
+
+        .project-description strong {
+            font-weight: bold;
+        }
+
+        .project-image {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .project-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .icon {
+            display: block;
+            margin: 20px auto 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        /* Conteneur centré du bouton */
+        .download-button-container {
+            text-align: center;
+            margin: 8px auto;
+        }
+
+        /* Style du bouton */
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px ;
+            background-color: #34b88f;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            text-align: center;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            width: auto;
+        }
+
+        .download-button:hover {
+            background-color: #2a8b6f;
+        }
+
+        /* Style du bouton Lire la suite / Réduire */
+        .toggle-button {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #006d64;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+            width: auto; /* Laisser le bouton s'ajuster à son contenu */
+            margin-top: 20px; /* Assurer que le bouton soit en bas */
+        }
+
+        .toggle-button:hover {
+            background-color: #2a8b6f;
+        }
+
+
+        #contexte{
+            color: #006d64;
+            margin-bottom: 8%;
+        }
+        @media (max-width: 768px) {
+  .project-section .project {
+    width: 100%;  /* chaque bloc prend toute la largeur */
+  }
+}
+
+    </style>
+</head>
+<body>    
+
+<!-- Navigation Bar -->
+<header>
+    <nav class="navbar">
+        <div class="logo">Mon Portfolio</div>
+        <div class="burger" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="a-propos.html">À Propos</a></li>
+          <li><a href="bts-sio.html">BTS SIO</a></li>
+          <li><a href="ecole-entreprise.html">École & Entreprise</a></li>
+          <li><a href="autresprojets.html">Réalisations & Missions</a></li>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="veille.html">Veille Technologique</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      
+</header>
+
+<!-- Main Content -->
+<main>
+    <section id="projets"><br><br>
+        <img src="images/bibliobus.jpg" alt="Bibliobus Project" style="max-width: 20%; height: auto; display: block; margin: 0 auto; border-radius: 25px; "><br><br><br>
+        <h1>PROJETS</h1><br>
+
+        <!-- Box with orange italic text and button -->
+        <div class="box">
+            <div class="intro">
+                <p class="p">
+                    <h2 id="contexte">Contexte :</h2>
+                    Le projet <strong>Bibliobus</strong> est une initiative visant à moderniser l'accès aux livres dans des zones rurales grâce à des solutions numériques. 
+                    Il s'agit d'une réponse innovante aux défis de la lecture dans des zones peu desservies. Ce projet se compose de deux parties distinctes : une <strong>application client lourd</strong> pour la gestion interne 
+                    et une <strong>application web</strong> connectée à une API pour une accessibilité en ligne.
+                </p>
+                <br>
+                <p class="p2">N'hesitez pas à consulter mon LinkedIn, vous pourrez aussi y trouver des explications !</p>
+            </div>
+
+            <!-- Conteneur pour centrer le bouton -->
+            <div class="download-button-container">
+                <a href="images/Document_récapitulatif_Projet_E5.docx" class="download-button" download>Télécharger le document récapitulatif</a>
+            </div>
+        </div>
+
+        <!-- Projet 1 et Projet 2 côte à côte -->
+        <div class="project-section">
+            <!-- Projet 1 -->
+            <div class="project">
+                <h2>Projet 1 : Application Client Lourd</h2><br>
+                <div class="project-description">
+                    <p class="p" id="project1-short">
+                        L'application client lourd permet au <strong>bibliothécaire</strong> de gérer les livres en local, en ajoutant ou supprimant des livres dans la base de données. Elle propose également des fonctionnalités 
+                        de gestion des collections, des lecteurs, et des emprunts directement depuis un poste de travail dédié.
+                    </p>
+                    <button class="toggle-button" id="toggle1" onclick="toggleText('project1')">Lire la suite</button>
+                    <p id="project1-long" class="p" style="display:none;">
+                        Cette application est une solution idéale pour les <strong>bibliothèques mobiles</strong>, permettant un accès rapide et fiable aux données. Les bibliothécaires peuvent organiser leurs inventaires, suivre les tournées, 
+                        et gérer efficacement les ouvrages pour répondre aux besoins des lecteurs. De plus, cette application offre une <strong>interface conviviale et intuitive</strong>, permettant une prise en main rapide pour les utilisateurs.
+                    </p>
+                    <button class="toggle-button" id="toggle1-reduce" style="display:none;" onclick="toggleText('project1')">Réduire</button>
+                </div><br>
+
+                <div class="download-button-container">
+                    <a href="https://github.com/DenisUrgel/Java_bibliobus" class="download-button" download> ‎‎  ‎‎   ‎‎   ‎‎   ‎‎   ‎‎   ‎‎   ‎‎   ‎‎  ‎‎  Lien du projet sur GitHub  ‎‎ ‎‎   ‎‎   ‎‎   ‎‎   ‎‎   ‎‎   ‎‎   ‎‎   ‎‎  </a>
+                </div>
+                <div class="download-button-container">
+                    <a href="cebureau.html" class="download-button">Voir les captures d'écran</a>
+                </div>
+                <div class="project-image">
+                    <img src="images/local.png" alt="Local Icon" class="icon">
+                </div>
+
+            </div>
+
+            <!-- Projet 2 -->
+            <div class="project">
+                <h2>Projet 2 : Application Web</h2><br>
+                <div class="project-description">
+                    <p class="p" id="project2-short">
+                        Le projet web, connecté à une <strong>API</strong>, offre aux utilisateurs la possibilité de consulter le catalogue des livres disponibles, de réserver des ouvrages, 
+                        et de suivre leurs emprunts en ligne. Ce système étend l'accessibilité au-delà des frontières géographiques, permettant à quiconque d'accéder au catalogue de la bibliothèque à tout moment.
+                    </p>
+                    <button class="toggle-button" id="toggle2" onclick="toggleText('project2')">Lire la suite</button>
+                    <p id="project2-long" class="p" style="display:none;">
+                        Pour les bibliothécaires, l'<strong>interface web</strong> offre des outils avancés pour gérer les prêts et les retours, en se connectant directement à la base de données via une API sécurisée. Cela garantit une 
+                        <strong>synchronisation en temps réel</strong> des informations, améliorant ainsi la transparence et l'efficacité.
+                    </p>
+                    <button class="toggle-button" id="toggle2-reduce" style="display:none;" onclick="toggleText('project2')">Réduire</button>
+                </div><br>
+
+                <div class="download-button-container">
+                    <a href="https://github.com/DenisUrgel/php_bibliobus.git" class="download-button" download> ‎‎  ‎‎   ‎‎   ‎‎   ‎‎   ‎‎   ‎‎   ‎‎   ‎‎  ‎‎  Lien du projet sur GitHub  ‎‎ ‎‎   ‎‎   ‎‎   ‎‎   ‎‎   ‎‎   ‎‎   ‎‎   ‎‎  </a>
+                </div>
+                <div class="download-button-container">
+                    <a href="ceweb.html" class="download-button">Voir les captures d'écran</a>
+                </div>
+
+                <div class="project-image">
+                    <img src="images/web.png" alt="Web Icon" class="icon">
+                </div>
+
+            </div>
+        </div>
+
+    </section><br><br><br><br><br><br>
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Mon Portfolio - Tous droits réservés</p>
+    <a href="https://www.linkedin.com/in/leomahe" target="_blank">Mon LinkedIn</a>
+</footer>
+
+<script>
+    function toggleText(project) {
+        var shortText = document.getElementById(project + '-short');
+        var longText = document.getElementById(project + '-long');
+        var toggleButton = document.getElementById('toggle' + project.charAt(project.length - 1));
+        var reduceButton = document.getElementById('toggle' + project.charAt(project.length - 1) + '-reduce');
+        
+        if (longText.style.display === "none") {
+            longText.style.display = "block";
+            toggleButton.style.display = "none";
+            reduceButton.style.display = "inline-block";
+        } else {
+            longText.style.display = "none";
+            toggleButton.style.display = "inline-block";
+            reduceButton.style.display = "none";
+        }
+    }
+
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
+  
+</body>
+</html>

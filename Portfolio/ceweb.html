@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Captures - Application Client Lourd</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #006d64;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-top: 50px;
+      color: #ffffff;
+    }
+    .celogo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+    }
+    .logo {
+      height: 150px;
+      width: 150px;
+    }
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      margin: 50px auto;
+      max-width: 1000px;
+    }
+    .capture-item {
+      text-align: center;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .capture-item img {
+      max-width: 800px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+    .capture-item img:hover {
+      transform: scale(1.03);
+    }
+
+
+
+    .description-box {
+  background-color: white;
+  color: black;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 600px;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.description-box p {
+  margin-bottom: 16px;
+    font-size: 23px;
+
+}
+
+.more-text {
+  display: none;
+  transition: all 1s ease;
+}
+
+.more-text p {
+    font-size: 18px;
+    color: black;
+}
+
+.more-text.visible {
+  display: block;
+}
+
+
+
+
+
+
+
+
+    .description-box strong {
+      color: #34b88f;
+    }
+    .toggle-btn {
+  background-color: #34b88f;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+    .toggle-btn:hover {
+      background-color: #2a8b6f;
+    }
+    .retour {
+      display: block;
+      width: fit-content;
+      margin: 30px auto;
+      padding: 10px 20px;
+      background-color: #34b88f;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .retour:hover {
+      background-color: #2a8b6f;
+    }
+    footer {
+      text-align: center;
+      margin-top: 60px;
+    }
+    footer a {
+      color: #a8dadc;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="celogo">
+    <img src="images/ce.png" alt="logo capture ecran" class="logo" />
+  </div>
+  <h1>Captures - Application Client Lourd</h1>
+
+  <a href="projets.html" class="retour">← Retour à la page précédente</a>
+<br>
+  <div class="gallery">
+
+<!-- VISITEUR NON CONNECTÉ -->
+<div class="capture-item">
+    <img src="images/captures/accueilwebnolog.png" alt="Accueil non connecté" />
+    <div class="description-box">
+      <p>Cette page est l’écran d’accueil pour les <strong>utilisateurs non connectés</strong>.</p>
+      <div class="more-text">
+        <p>On y retrouve les principales options publiques telles que l'<strong>inscription</strong> avec les <strong>tarifs</strong> ou la <strong>connexion</strong>.<br> Si l’utilisateur a <strong>perdu son mot de passe</strong>, il peut lancer une procédure de réinitialisation qui lui enverra un <strong>email</strong> sécurisé contenant un lien de changement de mot de passe. <br><br> Cette interface de départ permet de sécuriser l’accès aux fonctions réservées et de guider efficacement les nouveaux utilisateurs.</p>
+      </div>
+      <button class="toggle-btn">Lire la suite</button>
+    </div>
+  </div>
+  <br><br><br>
+  
+  
+  <!-- UTILISATEUR CONNECTÉ (ROLE_USER) -->
+<div class="capture-item">
+    <img src="images/captures/accueilwebuser.png" alt="Accueil utilisateur connecté" />
+    <div class="description-box">
+      <p>Voici l’interface d’accueil d’un <strong>utilisateur connecté</strong>.</p>
+      <div class="more-text">
+        <p>L’utilisateur a désormais accès à de nouvelles fonctionnalités : consulter la <strong>liste des livres</strong>, effectuer des <strong>réservations</strong>, suivre <strong>ses prêts</strong>, et accéder à son <strong>profil personnel</strong>. Il peut également <strong>contacter le support</strong> via un formulaire. <br><br> L’interface est pensée pour permettre à l’usager de gérer son expérience dans la bibliothèque de manière simple et efficace.</p>
+      </div>
+      <button class="toggle-btn">Lire la suite</button>
+    </div>
+  </div>
+  
+    <br><br><br>
+
+
+    <!-- ADMINISTRATEUR CONNECTÉ (ROLE_ADMIN) -->
+<div class="capture-item">
+    <img src="images/captures/accueilwebadmin.png" alt="Accueil administrateur" />
+    <div class="description-box">
+      <p>Cette capture montre l’accueil d’un <strong>administrateur</strong>.</p>
+      <div class="more-text">
+        <p>En plus des fonctionnalités classiques d’un utilisateur, l’admin dispose d’un accès à un <strong>espace d’administration</strong>. Il peut y gérer les <strong>utilisateurs</strong>, les <strong>livres</strong>, les <strong>réservations</strong> ou les <strong>tournées</strong>. <br><br> Cette séparation des droits garantit une application <strong>sécurisée</strong>, avec des droits spécifiques à chaque <strong>rôle</strong>. Le back-office admin permet de <strong>piloter l’ensemble</strong> de la base et les opérations critiques <strong>de la plateforme.</strong></p>
+      </div>
+      <button class="toggle-btn">Lire la suite</button>
+    </div>
+  </div>
+  <br><br><br>
+
+  </div><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <footer>
+    <p>© 2025 Mon Portfolio - Tous droits réservés</p>
+    <a href="https://www.linkedin.com/in/leomahe" target="_blank">Mon LinkedIn</a>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.toggle-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const moreText = button.previousElementSibling;
+        moreText.classList.toggle('visible');
+        button.textContent = moreText.classList.contains('visible') ? 'Réduire' : 'Lire la suite';
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        @media (max-width: 768px) {
+          .rss-feed {
+            padding: 0.9rem;
+          }
+        }
+      </style>
+      
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Mon Portfolio</div>
+            <div class="burger" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links" id="navLinks">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="a-propos.html">À Propos</a></li>
+              <li><a href="bts-sio.html">BTS SIO</a></li>
+              <li><a href="ecole-entreprise.html">École & Entreprise</a></li>
+              <li><a href="autresprojets.html">Réalisations & Missions</a></li>
+              <li><a href="projets.html">Projets</a></li>
+              <li><a href="veille.html">Veille Technologique</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          
+    </header>
+
+    <!-- Main Content -->
+    <main>
+<section id="veille" class="section veille">
+    <br><h1>Veille Technologique : L'injection SQL</h1><br><br><br>
+ <div class="texte-1" >J’ai choisi de m’intéresser à <strong>l’injection SQL</strong> car elle représente l’un des risques de <strong>sécurité</strong> les plus 
+fréquents dans le développement web.<br><br> En tant qu’étudiant en <strong>BTS SIO</strong> option <strong>SLAM</strong>, ce sujet me permet de faire le lien entre
+ mes <strong>projets</strong>, mes <strong>cours</strong> de programmation,<br> et les <strong>bonnes pratiques</strong> essentielles à appliquer dès aujourd’hui pour coder de façon plus sécurisée.<br></div>
+<br>
+    <div class="veille-content">
+
+        <!-- Définition -->
+        <div class="actualite">
+            <h2>Qu'est-ce qu'une injection SQL ?</h2>
+            <p>Une <strong>injection SQL</strong> (SQLi) consiste à insérer du <strong>code SQL malveillant</strong> dans un champ d’entrée utilisateur, comme un formulaire de connexion. Si l’application n’est pas protégée, ce code est exécuté par la base de données, ce qui peut permettre à un attaquant de :</p>
+            <ul>
+                <li><strong>Accéder</strong> à des données confidentielles (mots de passe, e-mails, etc.)</li>
+                <li><strong>Modifier</strong> ou <strong>supprimer</strong> des données dans la base</li>
+                <li><strong>Contourner</strong> les systèmes de connexion</li>
+                <li>Parfois même, <strong>prendre le contrôle complet</strong> du serveur</li>
+            </ul>
+<br><br>
+            <p>C’est une faille particulièrement dangereuse, car elle peut toucher directement les données critiques d’une entreprise.</p>
+        </div>
+
+        <!-- Formulaire simulé avec design amélioré -->
+        <div class="technologies">
+            <h2>Exemple de simulation</h2>
+            <div class="texte-2">Voici un exemple de formulaire de connexion simulant une faille d’injection SQL. Il n’utilise pas de base de données réelle, mais il montre le <strong>comportement typique d’une application vulnérable</strong>.</div>
+<br>
+            <form id="loginForm" class="form-sql">
+                <label for="username">Nom d'utilisateur :</label>
+                <input type="text" id="username" name="username" placeholder="ex: admin" required>
+
+                <label for="password">Mot de passe :</label>
+                <input type="text" id="password" name="password" placeholder="ex: admin123 ou ' OR '1'='1" required>
+
+                <button type="submit">🔐 Se connecter</button>
+            </form>
+
+            <div id="result" class="result-box"></div>
+
+            <script>
+                document.getElementById('loginForm').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const user = document.getElementById('username').value;
+                    const pass = document.getElementById('password').value;
+                    const result = document.getElementById('result');
+
+                    if (user === "admin" && pass === "admin123") {
+                        result.textContent = "✅ Connexion réussie en tant qu'administrateur.";
+                        result.style.color = "green";
+                    } else if (pass.includes("' OR '1'='1")) {
+                        result.textContent = "⚠️ Tentative d'injection SQL détectée ! Connexion accordée de manière non sécurisée.";
+                        result.style.color = "orange";
+                    } else {
+                        result.textContent = "❌ Identifiants incorrects. Connexion échouée.";
+                        result.style.color = "red";
+                    }
+                });
+            </script>
+        </div>
+
+        <!-- Protections -->
+        <div class="impact">
+            <h2>Comment se protéger d'une injection SQL ?</h2>
+            <p>Il existe plusieurs bonnes pratiques pour <strong>empêcher les injections SQL</strong> dans une application :</p>
+            <br><ul>
+                <li><strong>Utiliser des requêtes préparées</strong> ou des <strong>ORM</strong> (ex : PDO en PHP, Sequelize en Node.js)</li>
+                <li><strong>Éviter de construire les requêtes SQL</strong> à partir de chaînes de caractères concaténées avec les données utilisateur</li>
+                <li><strong>Filtrer, valider et échapper</strong> toutes les entrées utilisateur côté serveur</li>
+                <li><strong>Limiter les droits d’accès</strong> de la base de données : un utilisateur SQL ne devrait pas avoir plus de droits que nécessaire</li>
+                <li>Utiliser des outils de test de sécurité comme <strong>OWASP ZAP</strong> ou <strong>SQLMap</strong> pour analyser son code</li>
+            </ul><br><br><br>
+            <p>La sécurité ne se limite pas à une ligne de code : elle repose sur une <strong>bonne architecture</strong>, des <strongbons outils</strong> et des <strong>bonnes habitudes</strong>.</p>
+        </div>
+
+<!-- Liens vers les articles -->
+<!-- Liens vers les articles -->
+<div class="rss-feed">
+    <h2>Articles sur l'Injection SQL</h2>
+    <p>Voici <strong>3 sites fiables</strong> que j'utilise pour suivre les <strong>actualités</strong> sur les <strong> injections SQL</strong>  :</p><br><br>
+    <ul>
+        <li><a href="https://portswigger.net/daily-swig/sql-injection" target="_blank" class="rss-btn">PortSwigger - SQL Injection</a></li>
+        <li><a href="https://www.bleepingcomputer.com/tag/sql-injection/" target="_blank" class="rss-btn">BleepingComputer - SQL Injection</a></li>
+        <li><a href="https://thehackernews.com/search/label/sql%20injection" target="_blank" class="rss-btn">The Hacker News - SQL Injection</a></li>
+    </ul>
+<br><br><br><br><br>
+    <!-- Phrase en bas -->
+    <p class="rss-info">Malheureusement, aucun site répertoriant des articles sur les injections SQL ne propose de flux RSS direct.</p>
+</div>
+
+
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Mon Portfolio - Tous droits réservés</p>
+        <a href="https://www.linkedin.com/in/leomahe" target="_blank">Mon LinkedIn</a>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+          document.getElementById("navLinks").classList.toggle("show");
+        }
+      </script>
+      
+</body>
+</html>

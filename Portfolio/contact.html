@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Mon Portfolio</div>
+            <div class="burger" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links" id="navLinks">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="a-propos.html">À Propos</a></li>
+              <li><a href="bts-sio.html">BTS SIO</a></li>
+              <li><a href="ecole-entreprise.html">École & Entreprise</a></li>
+              <li><a href="autresprojets.html">Réalisations & Missions</a></li>
+              <li><a href="projets.html">Projets</a></li>
+              <li><a href="veille.html">Veille Technologique</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="a-propos" class="section a-propos">
+            <h1>Contactez-moi</h1>
+
+
+            <!-- Formulaire de contact -->
+            <form
+                action="https://formspree.io/f/xrbgnglb"
+                method="POST"
+                class="contact-form">
+               
+                <label>
+                    Votre nom:
+                    <input type="text" name="name" placeholder="Entrez votre nom" required>
+                </label><br>
+                <label>
+                    Votre email:
+                    <input type="email" name="email" placeholder="Entrez votre email" required>
+                </label><br>
+                <label>
+                    Votre message:
+                    <textarea name="message" placeholder="Votre message ici..." required></textarea>
+                </label><br>
+                <button type="submit">Envoyer</button>
+            </form>
+            
+        <div class="linkedin-logo">
+            <a href="https://www.linkedin.com/in/leomahe" target="_blank">
+              <img src="images/linkedin.png" alt="LinkedIn Logo">
+            </a>
+          </div> 
+        </section>
+
+          
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Mon Portfolio - Tous droits réservés</p>
+        <a href="https://www.linkedin.com/in/leomahe" target="_blank">Mon LinkedIn</a>
+    </footer>
+    <script>
+        function toggleMenu() {
+          document.getElementById("navLinks").classList.toggle("show");
+        }
+      </script>
+      
+</body>
+</html>

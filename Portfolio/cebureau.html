@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Captures - Application Client Lourd</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #006d64;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-top: 50px;
+      color: #ffffff;
+    }
+    .celogo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+    }
+    .logo {
+      height: 150px;
+      width: 150px;
+    }
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      margin: 50px auto;
+      max-width: 1000px;
+    }
+    .capture-item {
+      text-align: center;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .capture-item img {
+      max-width: 800px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+    .capture-item img:hover {
+      transform: scale(1.03);
+    }
+
+
+
+    .description-box {
+  background-color: white;
+  color: black;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 600px;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.description-box p {
+  margin-bottom: 16px;
+    font-size: 23px;
+
+}
+
+.more-text {
+  display: none;
+  transition: all 1s ease;
+}
+
+.more-text p {
+    font-size: 18px;
+    color: black;
+}
+
+.more-text.visible {
+  display: block;
+}
+
+
+
+
+
+
+
+
+    .description-box strong {
+      color: #34b88f;
+    }
+    .toggle-btn {
+  background-color: #34b88f;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+    .toggle-btn:hover {
+      background-color: #2a8b6f;
+    }
+    .retour {
+      display: block;
+      width: fit-content;
+      margin: 30px auto;
+      padding: 10px 20px;
+      background-color: #34b88f;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .retour:hover {
+      background-color: #2a8b6f;
+    }
+    footer {
+      text-align: center;
+      margin-top: 60px;
+    }
+    footer a {
+      color: #a8dadc;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="celogo">
+    <img src="images/ce.png" alt="logo capture ecran" class="logo" />
+  </div>
+  <h1>Captures - Application Client Lourd</h1>
+
+  <a href="projets.html" class="retour">← Retour à la page précédente</a>
+
+  <div class="gallery">
+
+    <!-- ACCUEIL -->
+    <div class="capture-item">
+      <img src="images/captures/accueilbureau.png" alt="Accueil" />
+      <div class="description-box">
+        <p>Cette interface constitue l’<strong>écran d’accueil</strong> de l’application.</p>
+        <div class="more-text">
+          <p>Elle propose un <strong>tableau complet</strong> listant tous les livres de la base de données, avec des colonnes pour le <strong>titre, catégorie, auteur, collection</strong> et <strong>couverture</strong>. Un lien permet d’accéder aux <strong>détails</strong> de chaque ouvrage.</p><br>
+          <p>En bas de la fenêtre, le bibliothécaire peut <strong>ajouter un nouveau livre</strong> en remplissant ses informations : nom, auteur, collection, résumé, etc. Il est également possible de <strong>chercher un livre</strong> ou <strong>rafraîchir</strong> l’affichage. Cette page centrale permet donc de gérer rapidement et efficacement l’ensemble des livres disponibles dans l’application.</p>
+        </div>
+        <button class="toggle-btn">Lire la suite</button>
+      </div>
+    </div>
+    <br><br><br>
+    <!-- AUTEUR -->
+    <div class="capture-item">
+      <img src="images/captures/auteurbureau.png" alt="Auteur" />
+      <div class="description-box">
+        <p>Cette page permet la <strong>gestion complète des auteurs</strong>.</p>
+        <div class="more-text">
+          <p>Le bibliothécaire peut y consulter toutes les entrées existantes dans un <strong>tableau clair</strong>, mais aussi en <strong>ajouter de nouveaux</strong> ou en <strong>supprimer</strong> au besoin. Cette fonctionnalité assure une gestion précise et rapide des différents auteurs associés aux ouvrages dans la bibliothèque.</p>
+        </div>
+        <button class="toggle-btn">Lire la suite</button>
+      </div>
+    </div>
+    <br><br><br>
+    <!-- CATÉGORIE -->
+    <div class="capture-item">
+      <img src="images/captures/categoriebureau.png" alt="Catégorie" />
+      <div class="description-box">
+        <p>Cette interface est dédiée à la <strong>gestion des catégories</strong> de livres.</p>
+        <div class="more-text">
+          <p>Le tableau affiche le <strong>nom de chaque catégorie</strong> ainsi que le <strong>nombre de livres associés</strong>. Le bibliothécaire peut <strong>ajouter une nouvelle catégorie</strong> pour organiser la base ou <strong>supprimer une catégorie existante</strong>. Cette section permet de structurer efficacement les types d’ouvrages disponibles.</p>
+        </div>
+        <button class="toggle-btn">Lire la suite</button>
+      </div>
+    </div>
+    <br><br><br>
+    <!-- COLLECTION -->
+    <div class="capture-item">
+      <img src="images/captures/collectionbureau.png" alt="Collection" />
+      <div class="description-box">
+        <p>L'écran des collections permet de <strong>gérer les différentes collections</strong> littéraires de l'application.</p>
+        <div class="more-text">
+          <p>Chaque collection peut être <strong>ajoutée ou supprimée</strong> selon les besoins. Un lien permet aussi d’<strong>accéder à la gestion des éditeurs</strong>. Cette fonctionnalité facilite l’organisation des livres par collection et leur rattachement à un éditeur spécifique.</p>
+        </div>
+        <button class="toggle-btn">Lire la suite</button>
+      </div>
+    </div>
+    <br><br><br>
+    <!-- ÉDITEUR -->
+    <div class="capture-item">
+      <img src="images/captures/editeurbureau.png" alt="Éditeur" />
+      <div class="description-box">
+        <p>Cette section est consacrée à la <strong>gestion des éditeurs</strong>.</p>
+        <div class="more-text">
+          <p>Tout comme les autres entités, on peut ici <strong>ajouter un nouvel éditeur</strong> ou <strong>en supprimer un existant</strong>. Cette étape est importante pour bien associer chaque collection ou ouvrage à sa maison d’édition.</p>
+        </div>
+        <button class="toggle-btn">Lire la suite</button>
+      </div>
+    </div>
+
+  </div><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <footer>
+    <p>© 2025 Mon Portfolio - Tous droits réservés</p>
+    <a href="https://www.linkedin.com/in/leomahe" target="_blank">Mon LinkedIn</a>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.toggle-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const moreText = button.previousElementSibling;
+        moreText.classList.toggle('visible');
+        button.textContent = moreText.classList.contains('visible') ? 'Réduire' : 'Lire la suite';
+      });
+    });
+  </script>
+</body>
+</html>
