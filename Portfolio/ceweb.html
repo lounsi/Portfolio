@@ -19,6 +19,15 @@
       margin-top: 50px;
       color: #ffffff;
     }
+@media (max-width: 600px) {
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* au cas où, éviter que ça dépasse */
+    display: block;  /* pour éviter les petits espaces sous l'image */
+  }
+}
+
     .celogo {
       display: flex;
       justify-content: center;
