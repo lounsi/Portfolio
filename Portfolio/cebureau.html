@@ -13,6 +13,15 @@
       margin: 0;
       padding: 0;
     }
+@media (max-width: 600px) {
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* au cas où, éviter que ça dépasse */
+    display: block;  /* pour éviter les petits espaces sous l'image */
+  }
+}
+
     h1 {
       text-align: center;
       font-size: 3rem;
