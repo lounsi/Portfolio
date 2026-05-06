@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Veille technologique sur l'injection SQL — Léo Mahé.">
+  <title>Veille Technologique — Léo Mahé</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Portfolio — Léo Mahé">
+  <meta property="og:title" content="Veille Technologique — Léo Mahé">
+  <meta property="og:description" content="Veille technologique sur l'injection SQL — Léo Mahé.">
+  <meta property="og:image" content="https://static.wixstatic.com/media/11062b_506a7bde611947b6bb5444e44a57017d~mv2.jpg/v1/fill/w_872,h_660,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_506a7bde611947b6bb5444e44a57017d~mv2.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Léo Mahé</div>
+      <button class="burger" onclick="toggleMenu()" aria-label="Menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À Propos</a></li>
+        <li><a href="bts-sio.html">BTS SIO</a></li>
+        <li><a href="ecole-entreprise.html">École &amp; Entreprise</a></li>
+        <li><a href="autresprojets.html">Réalisations</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="veille.html">Veille</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="veille">
+      <h1 class="fade-in">Veille Technologique : L'injection SQL</h1>
+
+      <div class="texte-1 fade-in">
+        J'ai choisi de m'intéresser à <strong>l'injection SQL</strong> car elle représente l'un des risques de <strong>sécurité</strong> les plus
+        fréquents dans le développement web.<br><br>
+        En tant qu'étudiant en <strong>BTS SIO</strong> option <strong>SLAM</strong>, ce sujet me permet de faire le lien entre
+        mes <strong>projets</strong>, mes <strong>cours</strong> de programmation, et les <strong>bonnes pratiques</strong> essentielles
+        à appliquer dès aujourd'hui pour coder de façon plus sécurisée.
+      </div>
+
+      <div class="veille-content">
+
+        <div class="actualite fade-in">
+          <h2>Qu'est-ce qu'une injection SQL ?</h2>
+          <p>Une <strong>injection SQL</strong> (SQLi) consiste à insérer du <strong>code SQL malveillant</strong> dans un champ d'entrée utilisateur. Si l'application n'est pas protégée, ce code est exécuté par la base de données, ce qui peut permettre à un attaquant de :</p>
+          <ul>
+            <li><strong>Accéder</strong> à des données confidentielles (mots de passe, e-mails, etc.)</li>
+            <li><strong>Modifier</strong> ou <strong>supprimer</strong> des données dans la base</li>
+            <li><strong>Contourner</strong> les systèmes de connexion</li>
+            <li>Parfois même, <strong>prendre le contrôle complet</strong> du serveur</li>
+          </ul>
+          <p style="margin-top:1rem;">C'est une faille particulièrement dangereuse, car elle peut toucher directement les données critiques d'une entreprise.</p>
+        </div>
+
+        <div class="technologies fade-in">
+          <h2>Exemple de simulation</h2>
+          <div class="texte-2">Voici un exemple de formulaire simulant une faille d'injection SQL. Il n'utilise pas de base de données réelle, mais montre le <strong>comportement typique d'une application vulnérable</strong>.</div>
+          <form id="loginForm" class="form-sql">
+            <label for="username">Nom d'utilisateur :</label>
+            <input type="text" id="username" name="username" placeholder="ex: admin" required>
+            <label for="password">Mot de passe :</label>
+            <input type="text" id="password" name="password" placeholder="ex: admin123 ou ' OR '1'='1" required>
+            <button type="submit">🔐 Se connecter</button>
+          </form>
+          <div id="result" class="result-box"></div>
+        </div>
+
+        <div class="impact fade-in">
+          <h2>Comment se protéger ?</h2>
+          <p>Il existe plusieurs bonnes pratiques pour <strong>empêcher les injections SQL</strong> :</p>
+          <ul>
+            <li><strong>Utiliser des requêtes préparées</strong> ou des <strong>ORM</strong> (PDO en PHP, Sequelize en Node.js)</li>
+            <li><strong>Éviter de construire les requêtes SQL</strong> à partir de chaînes concaténées avec des données utilisateur</li>
+            <li><strong>Filtrer, valider et échapper</strong> toutes les entrées utilisateur côté serveur</li>
+            <li><strong>Limiter les droits d'accès</strong> de la base de données</li>
+            <li>Utiliser des outils comme <strong>OWASP ZAP</strong> ou <strong>SQLMap</strong> pour analyser son code</li>
+          </ul>
+          <p style="margin-top:1rem;">La sécurité repose sur une <strong>bonne architecture</strong>, de <strong>bons outils</strong> et de <strong>bonnes habitudes</strong>.</p>
+        </div>
+
+        <div class="rss-feed fade-in">
+          <h2>Articles sur l'Injection SQL</h2>
+          <p>Voici <strong>3 sites fiables</strong> que j'utilise pour suivre les <strong>actualités</strong> sur les <strong>injections SQL</strong> :</p>
+          <ul>
+            <li><a href="https://portswigger.net/daily-swig/sql-injection" target="_blank" class="rss-btn">PortSwigger - SQL Injection</a></li>
+            <li><a href="https://www.bleepingcomputer.com/tag/sql-injection/" target="_blank" class="rss-btn">BleepingComputer - SQL Injection</a></li>
+            <li><a href="https://thehackernews.com/search/label/sql%20injection" target="_blank" class="rss-btn">The Hacker News - SQL Injection</a></li>
+          </ul>
+          <p class="rss-info">Malheureusement, aucun site répertoriant des articles sur les injections SQL ne propose de flux RSS direct.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Léo Mahé — Tous droits réservés</p>
+    <a href="https://www.linkedin.com/in/leomahe" target="_blank">LinkedIn</a>
+  </footer>
+  <script src="main.js"></script>
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var user   = document.getElementById('username').value;
+      var pass   = document.getElementById('password').value;
+      var result = document.getElementById('result');
+      if (user === 'admin' && pass === 'admin123') {
+        result.textContent = '✅ Connexion réussie en tant qu\'administrateur.';
+        result.style.color = '#16a34a';
+      } else if (pass.includes("' OR '1'='1")) {
+        result.textContent = '⚠️ Tentative d\'injection SQL détectée ! Connexion accordée de manière non sécurisée.';
+        result.style.color = '#d97706';
+      } else {
+        result.textContent = '❌ Identifiants incorrects. Connexion échouée.';
+        result.style.color = '#dc2626';
+      }
+    });
+  </script>
+</body>
+</html>

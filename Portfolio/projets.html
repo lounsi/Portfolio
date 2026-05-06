@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projets Bibliobus — Application client lourd Java et application web PHP.">
+  <title>Projets — Léo Mahé</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Portfolio — Léo Mahé">
+  <meta property="og:title" content="Projets — Léo Mahé">
+  <meta property="og:description" content="Projets Bibliobus — Application client lourd Java et application web PHP.">
+  <meta property="og:image" content="https://static.wixstatic.com/media/11062b_506a7bde611947b6bb5444e44a57017d~mv2.jpg/v1/fill/w_872,h_660,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_506a7bde611947b6bb5444e44a57017d~mv2.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Léo Mahé</div>
+      <button class="burger" onclick="toggleMenu()" aria-label="Menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À Propos</a></li>
+        <li><a href="bts-sio.html">BTS SIO</a></li>
+        <li><a href="ecole-entreprise.html">École &amp; Entreprise</a></li>
+        <li><a href="autresprojets.html">Réalisations</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="veille.html">Veille</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="projets" class="projects-page">
+      <img src="images/bibliobus.jpg" alt="Projet Bibliobus" class="project-hero-img">
+      <h1 class="fade-in">PROJETS</h1>
+
+      <div class="box fade-in">
+        <div class="intro">
+          <h2 id="contexte">Contexte</h2>
+          <p class="p">
+            Le projet <strong>Bibliobus</strong> est une initiative visant à moderniser l'accès aux livres dans des zones rurales grâce à des solutions numériques.
+            Il s'agit d'une réponse innovante aux défis de la lecture dans des zones peu desservies. Ce projet se compose de deux parties : une <strong>application client lourd</strong> pour la gestion interne
+            et une <strong>application web</strong> connectée à une API pour une accessibilité en ligne.
+          </p>
+          <p class="p2">N'hésitez pas à consulter mon LinkedIn, vous pourrez aussi y trouver des explications !</p>
+        </div>
+        <div class="download-button-container">
+          <a href="images/Document_récapitulatif_Projet_E5.docx" class="download-button" download>Télécharger le document récapitulatif</a>
+        </div>
+      </div>
+
+      <div class="project-wrapper">
+        <div class="project-section fade-in">
+          <h2>Projet 1 : Application Client Lourd</h2>
+          <div class="project-description">
+            <p class="p" id="project1-short">
+              L'application client lourd permet au <strong>bibliothécaire</strong> de gérer les livres en local, en ajoutant ou supprimant des livres dans la base de données. Elle propose également des fonctionnalités
+              de gestion des collections, des lecteurs, et des emprunts directement depuis un poste de travail dédié.
+            </p>
+            <button class="read-more-btn" id="toggle1" onclick="toggleText('project1')">Lire la suite →</button>
+            <p id="project1-long" class="p" style="display:none;">
+              Cette application est une solution idéale pour les <strong>bibliothèques mobiles</strong>, permettant un accès rapide et fiable aux données. Les bibliothécaires peuvent organiser leurs inventaires, suivre les tournées,
+              et gérer efficacement les ouvrages pour répondre aux besoins des lecteurs. De plus, cette application offre une <strong>interface conviviale et intuitive</strong>, permettant une prise en main rapide.
+            </p>
+            <button class="read-more-btn" id="toggle1-reduce" style="display:none;" onclick="toggleText('project1')">Réduire ↑</button>
+          </div>
+          <div class="download-button-container">
+            <a href="https://github.com/DenisUrgel/Java_bibliobus" class="download-button" target="_blank">Lien du projet sur GitHub</a>
+          </div>
+          <div class="download-button-container">
+            <a href="cebureau.html" class="download-button">Voir les captures d'écran</a>
+          </div>
+          <img src="images/local.png" alt="Application locale" class="icon">
+        </div>
+
+        <div class="project-section fade-in">
+          <h2>Projet 2 : Application Web</h2>
+          <div class="project-description">
+            <p class="p" id="project2-short">
+              Le projet web, connecté à une <strong>API</strong>, offre aux utilisateurs la possibilité de consulter le catalogue des livres disponibles, de réserver des ouvrages,
+              et de suivre leurs emprunts en ligne. Ce système étend l'accessibilité au-delà des frontières géographiques.
+            </p>
+            <button class="read-more-btn" id="toggle2" onclick="toggleText('project2')">Lire la suite →</button>
+            <p id="project2-long" class="p" style="display:none;">
+              Pour les bibliothécaires, l'<strong>interface web</strong> offre des outils avancés pour gérer les prêts et les retours, en se connectant directement à la base de données via une API sécurisée. Cela garantit une
+              <strong>synchronisation en temps réel</strong> des informations, améliorant ainsi la transparence et l'efficacité.
+            </p>
+            <button class="read-more-btn" id="toggle2-reduce" style="display:none;" onclick="toggleText('project2')">Réduire ↑</button>
+          </div>
+          <div class="download-button-container">
+            <a href="https://github.com/DenisUrgel/php_bibliobus.git" class="download-button" target="_blank">Lien du projet sur GitHub</a>
+          </div>
+          <div class="download-button-container">
+            <a href="ceweb.html" class="download-button">Voir les captures d'écran</a>
+          </div>
+          <img src="images/web.png" alt="Application web" class="icon">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Léo Mahé — Tous droits réservés</p>
+    <a href="https://www.linkedin.com/in/leomahe" target="_blank">LinkedIn</a>
+  </footer>
+  <script src="main.js"></script>
+  <script>
+    function toggleText(project) {
+      var num      = project.charAt(project.length - 1);
+      var longText = document.getElementById(project + '-long');
+      var btnShow  = document.getElementById('toggle'  + num);
+      var btnHide  = document.getElementById('toggle'  + num + '-reduce');
+      var hidden   = longText.style.display === 'none';
+      longText.style.display = hidden ? 'block'        : 'none';
+      btnShow.style.display  = hidden ? 'none'         : 'inline-block';
+      btnHide.style.display  = hidden ? 'inline-block' : 'none';
+    }
+  </script>
+</body>
+</html>

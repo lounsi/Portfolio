@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Captures d'écran de l'application web PHP — Bibliobus.">
+  <title>Captures — Application Web — Léo Mahé</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Portfolio — Léo Mahé">
+  <meta property="og:title" content="Captures — Application Web — Léo Mahé">
+  <meta property="og:description" content="Captures d'écran de l'application web PHP — Bibliobus.">
+  <meta property="og:image" content="https://static.wixstatic.com/media/11062b_506a7bde611947b6bb5444e44a57017d~mv2.jpg/v1/fill/w_872,h_660,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_506a7bde611947b6bb5444e44a57017d~mv2.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Léo Mahé</div>
+      <button class="burger" onclick="toggleMenu()" aria-label="Menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À Propos</a></li>
+        <li><a href="bts-sio.html">BTS SIO</a></li>
+        <li><a href="ecole-entreprise.html">École &amp; Entreprise</a></li>
+        <li><a href="autresprojets.html">Réalisations</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="veille.html">Veille</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="gallery-page">
+      <div class="celogo">
+        <img src="images/ce.png" alt="Icône captures d'écran">
+      </div>
+      <h1 class="fade-in">Captures — Application Web</h1>
+
+      <div style="text-align:center; margin-bottom: 2rem;">
+        <a href="projets.html" class="retour">← Retour à la page précédente</a>
+      </div>
+
+      <div class="gallery">
+
+        <div class="capture-item fade-in">
+          <img src="images/captures/accueilwebnolog.png" alt="Accueil non connecté">
+          <div class="description-box">
+            <p>Cette page est l'écran d'accueil pour les <strong>utilisateurs non connectés</strong>.</p>
+            <div class="more-text">
+              <p>On y retrouve les principales options publiques telles que l'<strong>inscription</strong> avec les <strong>tarifs</strong> ou la <strong>connexion</strong>. Si l'utilisateur a <strong>perdu son mot de passe</strong>, il peut lancer une procédure de réinitialisation qui lui enverra un <strong>email</strong> sécurisé contenant un lien de changement de mot de passe.</p>
+              <p>Cette interface de départ permet de sécuriser l'accès aux fonctions réservées et de guider efficacement les nouveaux utilisateurs.</p>
+            </div>
+            <button class="toggle-btn">Lire la suite</button>
+          </div>
+        </div>
+
+        <div class="capture-item fade-in">
+          <img src="images/captures/accueilwebuser.png" alt="Accueil utilisateur connecté">
+          <div class="description-box">
+            <p>Voici l'interface d'accueil d'un <strong>utilisateur connecté</strong>.</p>
+            <div class="more-text">
+              <p>L'utilisateur a désormais accès à de nouvelles fonctionnalités : consulter la <strong>liste des livres</strong>, effectuer des <strong>réservations</strong>, suivre <strong>ses prêts</strong>, et accéder à son <strong>profil personnel</strong>. Il peut également <strong>contacter le support</strong> via un formulaire.</p>
+              <p>L'interface est pensée pour permettre à l'usager de gérer son expérience dans la bibliothèque de manière simple et efficace.</p>
+            </div>
+            <button class="toggle-btn">Lire la suite</button>
+          </div>
+        </div>
+
+        <div class="capture-item fade-in">
+          <img src="images/captures/accueilwebadmin.png" alt="Accueil administrateur">
+          <div class="description-box">
+            <p>Cette capture montre l'accueil d'un <strong>administrateur</strong>.</p>
+            <div class="more-text">
+              <p>En plus des fonctionnalités classiques d'un utilisateur, l'admin dispose d'un accès à un <strong>espace d'administration</strong>. Il peut y gérer les <strong>utilisateurs</strong>, les <strong>livres</strong>, les <strong>réservations</strong> ou les <strong>tournées</strong>.</p>
+              <p>Cette séparation des droits garantit une application <strong>sécurisée</strong>, avec des droits spécifiques à chaque <strong>rôle</strong>. Le back-office admin permet de <strong>piloter l'ensemble</strong> de la base et les opérations critiques de la plateforme.</p>
+            </div>
+            <button class="toggle-btn">Lire la suite</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Léo Mahé — Tous droits réservés</p>
+    <a href="https://www.linkedin.com/in/leomahe" target="_blank">LinkedIn</a>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

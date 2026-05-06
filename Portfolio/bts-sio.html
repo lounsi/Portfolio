@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BTS SIO — Options SLAM et SISR, métiers du numérique.">
+  <title>BTS SIO — Léo Mahé</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Portfolio — Léo Mahé">
+  <meta property="og:title" content="BTS SIO — Léo Mahé">
+  <meta property="og:description" content="BTS SIO — Options SLAM et SISR, métiers du numérique.">
+  <meta property="og:image" content="https://static.wixstatic.com/media/11062b_506a7bde611947b6bb5444e44a57017d~mv2.jpg/v1/fill/w_872,h_660,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_506a7bde611947b6bb5444e44a57017d~mv2.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Léo Mahé</div>
+      <button class="burger" onclick="toggleMenu()" aria-label="Menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À Propos</a></li>
+        <li><a href="bts-sio.html">BTS SIO</a></li>
+        <li><a href="ecole-entreprise.html">École &amp; Entreprise</a></li>
+        <li><a href="autresprojets.html">Réalisations</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="veille.html">Veille</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="bts-sio">
+      <div class="bts-header fade-in">
+        <div class="bts-image-container">
+          <img src="images/travail.png" alt="BTS SIO" class="bts-image">
+        </div>
+        <h1>BTS SIO SLAM &amp; SISR</h1>
+      </div>
+
+      <div class="bts-content">
+        <div class="left fade-in">
+          <div class="bts-subheader">
+            <h1>SISR</h1>
+          </div>
+          <div class="bts-box">
+            <p>Le BTS SIO propose une spécialisation : l'option <strong>SISR</strong>, pour Solutions d'Infrastructure, Systèmes et Réseaux. Cette voie est destinée à ceux qui s'intéressent à l'installation, la gestion et la sécurisation des infrastructures informatiques.</p>
+            <p>La formation permet d'acquérir des compétences solides en administration de systèmes, en virtualisation et en gestion de réseaux.</p>
+            <div class="extra-text" style="display: none;">
+              <p>Les étudiants apprennent à mettre en place des serveurs, à configurer des équipements réseau, à assurer la maintenance et à veiller à la sécurité des données et des services. Ils découvrent aussi les enjeux de la cybersécurité et les bonnes pratiques pour protéger les systèmes d'information.</p>
+              <p>Grâce à des projets techniques et des périodes de stage en entreprise, l'option SISR prépare efficacement aux métiers de technicien systèmes et réseaux, administrateur systèmes, support informatique ou encore consultant en infrastructure.</p>
+              <p>SISR est faite pour ceux qui veulent comprendre ce qui se passe "sous le capot" et jouer un rôle essentiel dans la stabilité et la performance des systèmes informatiques d'une organisation.</p>
+            </div>
+            <button class="read-more-btn" onclick="toggleText(this)">Lire la suite →</button>
+          </div>
+        </div>
+
+        <div class="right fade-in">
+          <div class="bts-subheader">
+            <h1>SLAM</h1>
+          </div>
+          <div class="bts-box">
+            <p>Le BTS SIO est une formation en deux ans qui permet de se spécialiser dans les métiers du numérique. L'option <strong>SLAM</strong>, pour Solutions Logicielles et Applications Métiers, est pensée pour ceux qui veulent se tourner vers le développement d'applications et de logiciels.</p>
+            <p>Tout au long de la formation, on apprend à analyser les besoins d'un client ou d'une entreprise, puis à concevoir des solutions logicielles sur mesure.</p>
+            <div class="extra-text" style="display: none;">
+              <p>Cela passe par l'apprentissage de plusieurs langages de programmation, la gestion de bases de données, la modélisation d'applications et l'utilisation de frameworks actuels.</p>
+              <p>Cette option met l'accent sur la pratique, avec des projets concrets et des stages en entreprise. Elle ouvre la voie à de nombreux métiers comme développeur web, développeur d'applications mobiles, analyste-programmeur ou encore concepteur logiciel.</p>
+              <p>SLAM est l'option idéale pour ceux qui aiment coder, créer et donner vie à des idées à travers des solutions numériques innovantes.</p>
+            </div>
+            <button class="read-more-btn" onclick="toggleText(this)">Lire la suite →</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bts-subheader fade-in">
+        <h1>MÉTIERS</h1>
+      </div>
+
+      <div class="metiers">
+        <div class="metiers-liste">
+          <div class="left fade-in">
+            <ul id="listesisr">
+              <li>Administrateur systèmes et réseaux</li>
+              <li>Administrateur sécurité</li>
+              <li>Support systèmes et réseaux</li>
+              <li>Technicien avant-vente</li>
+              <li>Technicien d'infrastructure</li>
+              <li>Technicien développement – exploitation</li>
+              <li>Technicien de maintenance</li>
+              <li>Technicien réseaux – télécoms</li>
+              <li>Technicien support et déploiement</li>
+              <li>Technicien systèmes et réseaux</li>
+            </ul>
+          </div>
+          <div class="right fade-in">
+            <ul id="listeslam">
+              <li>Analyste d'applications</li>
+              <li>Analyste d'études</li>
+              <li>Analyste programmeur</li>
+              <li>Chargé d'études informatiques</li>
+              <li>Développeur d'applications informatiques</li>
+              <li>Développeur d'applications mobiles</li>
+              <li>Technicien développement – exploitation</li>
+              <li>Développeur Web</li>
+              <li>Informaticien d'études</li>
+              <li>Programmeur d'applications</li>
+              <li>Responsable des services applicatifs</li>
+              <li>Technicien d'études informatiques</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Léo Mahé — Tous droits réservés</p>
+    <a href="https://www.linkedin.com/in/leomahe" target="_blank">LinkedIn</a>
+  </footer>
+  <script src="main.js"></script>
+  <script>
+    function toggleText(button) {
+      var extra = button.previousElementSibling;
+      var hidden = extra.style.display === 'none';
+      extra.style.display = hidden ? 'block' : 'none';
+      button.textContent  = hidden ? 'Réduire ↑' : 'Lire la suite →';
+    }
+  </script>
+</body>
+</html>
