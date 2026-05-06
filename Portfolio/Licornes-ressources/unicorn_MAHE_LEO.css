@@ -1,0 +1,256 @@
+/*debut de header */
+#header_droite{
+    background-color: mediumvioletred;
+    display: flex;
+    margin-top: 2.2%;
+    
+}
+
+#le_principe_header_text{
+    text-decoration: none;
+    color: white;
+
+}
+
+#nos_licornes_header_text{
+    text-decoration: none;
+    color: white;
+}
+
+#nous_trouver_header_text{
+    text-decoration: none;
+    color: white;
+}
+
+#myunicorn_header{
+    background-color: mediumvioletred;
+    color: white;
+    justify-content: left;
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 58%;
+    font-size: 25px;
+    font-family: cursive;
+}
+
+#header{
+    background-color: mediumvioletred;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#le_principe_header{
+    margin-left: 100px;
+    display: flex;
+    justify-content: right;
+
+}
+
+#nos_licornes_header{
+    margin-left: 100px;
+    display: flex;
+    justify-content: right;
+
+}
+
+#nous_trouver_header{
+    margin-left: 100px;
+    display: flex;
+    justify-content: right;
+
+}
+
+/*fin de header*/
+
+/* début titre/arc en ciel*/
+
+ .titre{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-bottom: 10px;
+    transform: translateX(-50%);
+    margin-top: 10%;
+    color: #c55394;
+    font-family: cursive;
+    
+
+}
+.arcenciel{
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    max-width: 100%;
+    margin-top: 11%;
+} 
+#rainbow{
+    margin-left: 50%;
+}
+/* fin titre/arc en ciel*/
+
+
+/*debut du gros bloc*/
+
+/* margin : 0;   pour enlever les marge par défaut du navigateur */
+body{
+    background-image: url('ressources/background.png');
+    margin: 0;
+}
+
+
+#content{
+    margin-top: -13%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+    box-shadow: 0px 0px 5px 5px rgba(70, 70, 70, 0.356);
+    border-radius: 5px;
+    z-index: 2;
+    position: relative;
+
+}
+
+/* début le principe*/
+#le_principe{
+    color: mediumvioletred;
+    margin: 5px;
+    font-family: cursive;
+
+}
+#article_le_principe{
+    margin: 5px;
+    padding: 19px;
+
+}
+
+/* fin le principe */
+
+/*début nos licornes*/
+#nos_licornes{
+    color: mediumvioletred;
+    margin: 5px;
+    margin-top: 10px;
+    padding: 19px;
+    font-family: cursive;
+
+}
+
+#photos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#description_nos_licornes{
+    display: flex;
+    justify-content: space-around;
+    color: white ;
+}
+
+#lulu_confetty{
+    background-color: black;
+    padding: 20px;    
+    font-size: 20px;
+    padding-left: 6.0%;
+    padding-right: 6.3%;
+
+}
+
+#lapillon_magik{
+    background-color: black;
+    padding: 20px;
+    font-size: 20px;
+    padding-left: 5.7%;
+    padding-right: 5.8%;
+}
+#el_ninjacorn{
+    background-color: black;
+    padding: 20px;
+    font-size: 20px;
+    padding-left: 6.35%;
+    padding-right: 6.6%;
+}
+#sweety_candy{
+    background-color: black;
+    padding: 20px;
+    font-size: 20px;
+    padding-left: 5.25%;
+    padding-right: 6.85%;
+}
+
+/*fin nos licornes*/
+
+/*début nous trouver*/
+
+#nous_trouver{
+    color: mediumvioletred;
+    margin: 5px;
+    margin-top: 10px;
+    padding: 19px;
+    font-family: cursive;
+
+}
+
+#bloc_end{
+    display: flex;
+    flex-direction: row;
+}
+
+#google_map{
+    margin-left: 15px;
+    margin-bottom: 50px;
+}
+
+#bloc_end_right{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+/* NEDLESA == notre élevage de licornes est situé au */
+#NEDLESA{
+    color: mediumvioletred;
+    font-family: cursive;
+
+}
+
+#newsletter{
+    color: #c55394;
+    font-family: cursive;
+
+}
+
+#abonne{
+    background-color: mediumvioletred;
+    font-size: 27px;
+    border-radius: 6px;
+    color: white;
+    border-color: #c55394;
+}
+
+#email{
+    font-size: 20px;
+}
+
+/*fin nous trouver*/
+
+/*début footer*/
+#footer{
+    justify-content: center;
+    display: flex;
+    background-color: #c55394;
+    color: white;
+    margin-top: 130px;
+    padding: 30px;
+}
+
+/* fin footer */
+
+/* margin : 0;   pour enlever les marge par défaut du navigateur */
+p {
+    margin: 0;
+}
